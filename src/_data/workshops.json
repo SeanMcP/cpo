@@ -1,0 +1,15 @@
+[
+    {
+        "title": "Beginner workshop",
+        "price": "$100.00",
+        "sale": "$80.00",
+        "description": "This is a short description for the beginner workshop.",
+        "link": "https://nps.gov"
+    },
+    {
+        "title": "Advanced workshop",
+        "price": "$200.00",
+        "description": "This is a short description the advanced workshop.",
+        "link": "https://nps.gov"
+    }
+]

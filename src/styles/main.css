@@ -1,0 +1,33 @@
+/* Layout */
+
+.footer {
+    background-color: var(--dark-green);
+    margin-top: 1rem;
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 500px) {
+    .footer .container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* Partials */
+
+.workshop {
+    border: 2px solid white;
+    padding: 1rem;
+}
+
+.workshop__price .strike {
+    margin-right: 0.25rem;
+}
+
+.workshop + .workshop {
+    margin-top: 1rem;
+}

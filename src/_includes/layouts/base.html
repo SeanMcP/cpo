@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Central PA Outdoors</title>
+    <style>{% include "critical.css" %}</style>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            Central PA Outdoors
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            {{ content | safe }}
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__content">&copy; Central PA Outdoors</p>
+            <p class="footer__attribution">Made by <a href="https://seanmcp.com" target="_blank" rel="noopener noreferrer">SeanMcP</a></p>
+        </div>
+    </footer>
+</body>
+</html>

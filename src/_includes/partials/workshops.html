@@ -1,0 +1,15 @@
+<section id="workshops">
+    <h2>Workshops</h2>
+    {% for workshop in workshops %}
+<article class="workshop">
+    <h3 class="workshop__title">{{ workshop.title }}</h3>
+    {% if workshop.sale %}
+<p class="workshop__price"><span class="strike">{{ workshop.price }}</span>{{ workshop.sale }}</p>
+    {% else %}
+<p class="workshop__price">{{ workshop.price }}</p>
+    {% endif %}
+<p class="workshop__description">{{ workshop.description }}</p>
+<a href={{ workshop.link }} target="_blank" rel="noreferer noopener">Book a spot ➳</a>
+</article>
+    {% endfor %}
+</section>

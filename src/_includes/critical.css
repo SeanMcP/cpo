@@ -1,0 +1,58 @@
+:root {
+    --green: hsl(106, 21%, 28%);
+    --dark-green: hsl(106, 21%, 18%);
+    --accent: hsl(45, 78%, 60%);
+}
+
+body {
+    background-color: var(--green);
+    color: white;
+    display: grid;
+    grid-template-rows: max-content auto max-content;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    min-height: 100vh;
+    font-size: 125%;
+}
+
+* {
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+/* Layout */
+
+.container {
+    --side-margin: 0;
+    margin-left: var(--side-margin);
+    margin-right: var(--side-margin);
+    max-width: 34rem;
+    padding: 1rem;
+}
+
+.footer {
+    background-color: var(--dark-green);
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+    .container {
+        --side-margin: auto;
+    }
+
+    .footer .container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* Text */
+
+a {
+    color: var(--accent);
+}
+
+.strike {
+    text-decoration: line-through;
+}
