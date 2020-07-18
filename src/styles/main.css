@@ -1,16 +1,16 @@
 /* Layout */
 
-.footer {
+.site-footer {
     background-color: var(--dark-green);
     margin-top: var(--healthy-space);
 }
 
-.footer p {
+.site-footer p {
     margin-bottom: 0;
 }
 
 @media screen and (min-width: 500px) {
-    .footer .container {
+    .site-footer .container {
         align-items: center;
         display: flex;
         justify-content: space-between;

@@ -11,17 +11,18 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <div class="container">
+            {% include "logo.svg" %}
             Central PA Outdoors
         </div>
     </header>
-    <main>
+    <main class="site-main" id="main">
         <div class="container">
             {{ content | safe }}
         </div>
     </main>
-    <footer class="footer">
+    <footer class="site-footer">
         <div class="container">
             <p class="footer__content">&copy; Central PA Outdoors</p>
             <p class="footer__attribution">Site by <a href="https://seanmcp.com" target="_blank" rel="noopener noreferrer">SeanMcP</a></p>
