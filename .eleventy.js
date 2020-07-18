@@ -1,5 +1,6 @@
 module.exports = (config) => {
   config.addPassthroughCopy('./src/styles/');
+  config.addPassthroughCopy('./src/images/');
 
   return {
     markdownTemplateEngine: "njk",
