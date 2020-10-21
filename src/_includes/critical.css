@@ -44,12 +44,12 @@ body {
     --side-margin: 0;
     margin-left: var(--side-margin);
     margin-right: var(--side-margin);
-    max-width: 40rem;
+    max-width: 45rem;
     padding: 1rem;
 }
 
-.section {
-    margin-top: var(--healthy-space);
+.container > *:last-child {
+    margin-bottom: 0;
 }
 
 @media screen and (min-width: 500px) {

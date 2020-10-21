@@ -12,12 +12,15 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            {% include "logo.svg" %}
-            Central PA Outdoors
-        </div>
-    </header>
+    <section class="site-top">
+        <header class="site-header">
+            <div class="container">
+                {% include "logo.svg" %}
+                Central PA Outdoors
+            </div>
+        </header>
+        {% include "partials/hero.html" %}
+    </section>
     <main class="site-main" id="main">
         <div class="container">
             {{ content | safe }}
